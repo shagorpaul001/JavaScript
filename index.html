@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript</title>
+    <!-- icon -->
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+    <!-- css links -->
+    <link rel="stylesheet"  href="css/bootstrap.css">
+    <link rel="stylesheet"  href="css/style.css">
+    <link rel="stylesheet"  href="css/media.css">
+    <link rel="stylesheet"  href="css/bootstrap-icons.css">
+
+    <!-- link icon -->
+  </head>
+  <body>
+
+    <div class="container mb_200">
+        
+      <h1 class="text-danger">Click the button to show the Date</h1>
+      <button type="button" class="btn btn-dark" onclick="showDate()">Show Date</button>
+      <h2 id="d_h2">Date</h2>
+      <hr>
+
+
+      <h1 class="text-danger">Click the button to on/of the bulb</h1>
+      <button onclick="bulbOn()" type="button" class="btn btn-success">Bulb ON</button>
+      <button onclick="bulbOff()" type="button" class="btn btn-danger">Bulb ON</button>
+
+      <img id="img" src="img/off.gif" alt="bulb">
+      <hr>
+
+
+      <h1 class="text-danger">Click the button to change the font size</h1>
+      <button onclick="fontChange()" type="button" class="btn btn-dark">font change</button>
+      <h2 id="f_h2">loren ispum the end fonr size</h2>
+      <hr>
+
+
+      <h1 class="text-danger">Click the button to show/hide</h1>
+      <button onclick="show()" type="button" class="btn btn-danger">show</button>
+      <button onclick="hide()" type="button" class="btn btn-success">hide</button>
+
+      <h2 id="c_h2">loren ispum the sit emit</h2>
+
+      <hr>
+      <h1 class="text-danger">Click the button to show the text - document.write</h1>
+      <button onclick="writeOutput()" type="button" class="btn btn-dark">Dwrite</button>
+      <hr>
+
+      <h1 class="text-danger">Click the button to show the text - window.alert</h1>
+      <button onclick="walert()" type="button" class="btn btn-dark">Walert</button>
+      <hr>
+
+      <h1 class="text-danger">Click the button to show the text - console.log</h1>
+      <button onclick="cLog()" type="button" class="btn btn-success">console log</button>
+      <hr>
+
+      <h1 class="text-danger">Click the button to show the variable output</h1>
+      <button onclick="vOutput()" type="button" class="btn btn-dark">var output</button>
+
+      <h2 id="vh2"></h2>
+      <hr>
+
+      <h1 class="text-danger">Click the button to HTML Contact</h1>
+      <button onclick="clickMe()" type="button" class="btn btn-dark">Click Me</button>
+      <h2 id="m_h2">JavaScript can change HTML content.</h2>
+      <hr>
+
+      <h1 class="text-danger">Click the button to font size</h1>
+      <button onclick="fsize()" type="button" class="btn btn-success">font size</button>
+      <h2 id="n_h2">JavaScript can change the style of an HTML element.</h2>
+      <hr>
+
+      <h1 class="text-danger">Click the button to show/hide</h1>
+      <button onclick="showTag()" type="button" class="btn btn-danger">show</button>
+      <button onclick="hideTag()" type="button" class="btn btn-success">hide</button>
+      <h2 id="Ta_h2">JavaScript can hide HTML elements.</h2>
+      <hr>
+
+      <h1 class="text-danger">Click the button to Paragraph change</h1>
+      <button onclick="change()" type="button" class="btn btn-dark">tri it</button>
+      <h2 id="p_h2">A Paragraph</h2>
+      <hr>
+
+      <h1 class="text-danger">Click the button to document</h1>
+      <button onclick="dwrite()" type="button" class="btn btn-dark">Dwrite</button>
+      <hr>
+
+      <h1 class="text-danger">Click the button to alret</h1>
+      <button onclick="walert()" type="button" class="btn btn-dark">alret</button>
+      <hr>
+
+      <h1 class="text-danger">Click the button to var</h1>
+      <button onclick="rOutput()" type="button" class="btn btn-dark">var</button>
+
+      <h2 id="rh2"></h2>
+      <hr>
+
+      <h1 class="text-danger">Click the button to date</h1>
+      <button onclick="sDate()" type="button" class="btn btn-dark">date</button>
+      <h2 id="e_h2">Date</h2>
+
+        
+      <hr>
+
+      <h1 class="text-danger">Click the button to date onmouseover</h1>
+      <button onmouseover="hDate()" type="button" class="btn btn-dark">date</button>
+      <h2 id="l_h2">Date</h2>
+
+      <hr>
+
+      <h1 class="text-danger">Click the button to date onmouseout</h1>
+      <button onmouseout="eDate()" type="button" class="btn btn-dark">date</button>
+      <h2 id="g_h2">Date</h2>
+      <hr>
+
+      <h1 class="text-danger">Click the button to Math.PI</h1>
+
+      <button onclick="mathPl()" type="button" class="btn btn-dark">Math.PI</button>
+      <h2 id="a_h2"></h2>
+
+      <hr>
+      <h1 class="text-danger">Click the button to Math.E</h1>
+
+      <button onclick="mathE()" type="button" class="btn btn-dark">Math.E</button>
+      <h2 id="on_h2"></h2>
+      <hr>
+
+      <h1 class="text-danger">Click the button to Math.SQRT2</h1>
+      <button onclick="mathSQRT2()" type="button" class="btn btn-dark">Math.SQRT2</button>
+      <h2 id="da_h2"></h2>
+      <hr>
+
+      <h1 class="text-danger">Click the button to Math.SQRT1_2</h1>
+      <button onclick="mathSQRT1_2()" type="button" class="btn btn-dark">Math.SQRT1_2</button>
+
+      <h2 id="sq_h2"></h2>
+      <hr>
+
+      <h1 class="text-danger">Click the button to Math.LN2</h1>
+      <button onclick="mathLN2()" type="button" class="btn btn-dark">Math.LN2</button>
+
+      <h2 id="L_h2"></h2>
+      <hr>
+
+      <h1 class="text-danger">Click the button to Math.LN10</h1>
+      <button onclick="mathLN10()" type="button" class="btn btn-dark">Math.LN10</button>
+
+      <h2 id="N_h2"></h2>
+      <hr>
+
+      <h1 class="text-danger">Click the button to Math.LOG2E</h1>
+      <button onclick="mathLOG2E()" type="button" class="btn btn-dark">Math.LOG2E</button>
+
+      <h2 id="G_h2"></h2>
+      <hr>
+
+      <h1 class="text-danger">Click the button to Math.LOG2E</h1>
+      <button onclick="mathLog10E()" type="button" class="btn btn-dark">Math.Log10E</button>
+
+      <h2 id="H_h2"></h2>
+
+      <hr>
+
+      <h1 class="text-danger">Click the button to Math.round()</h1>
+      <button onclick="mathRound()" type="button" class="btn btn-dark">Math.round</button>
+
+      <h2 id="R_h2"></h2>
+      <hr>
+
+      <h1 class="text-danger">Click the button to Math.random()</h1>
+      <button onclick="mathRandom()" type="button" class="btn btn-dark">Math.random()</button>
+
+      <h2 id="u_h2"></h2>
+
+      <hr>
+
+      <h1 class="text-danger">Click the button to Booleans</h1>
+      <button onclick="booLeans()" type="button" class="btn btn-dark">Booleans</button>
+
+      <h2 id="s_h2"></h2>
+      <hr>
+
+      <h1 class="text-danger">Click the button to Arithmetic</h1>
+      <button onclick="peratorPrecedence()" type="button" class="btn btn-dark">Operator Precedence</button>
+
+      <h2 id="to_h2"></h2>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <!-- script links -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
+
+
+
